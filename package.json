@@ -4,10 +4,10 @@
   "description": "this is description of graduation",
   "main": "index.js",
   "scripts": {
-    "dev":"set WEBPACK=dev && webpack-dev-server --inline --port 8088",
-    "pack":"set WEBPACK=dev && webpack -p ",
-    "dev_linux":"WEBPACK=dev webpack-dev-server --inline --port 8088",
-    "pack_linux":"WEBPACK=dev webpack -p "
+    "dev": "set WEBPACK=dev && webpack-dev-server --inline --port 8088",
+    "pack": "set WEBPACK=dev && webpack -p ",
+    "dev_linux": "WEBPACK=dev webpack-dev-server --inline --port 8088",
+    "pack_linux": "WEBPACK=dev webpack -p "
   },
   "repository": {
     "type": "git",
@@ -31,5 +31,7 @@
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.2.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "hogan": "^1.0.2"
+  }
 }
