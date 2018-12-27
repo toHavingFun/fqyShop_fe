@@ -1,3 +1,3 @@
-var $$ = require('jquery');
-$$('body').html('<h1>emmm.....</h1>');
-console.log('hhhhhh');
+require('./layout.css');
+require('node_modules/font-awesome/css/font-awesome.css');
+require('./footer/index.css')

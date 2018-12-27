@@ -42,8 +42,8 @@ var _fqy = {
 		return res ? decodeURIComponent(res[2]) : null;
 	},
 	// render : 渲染
-	renderHtmlWithDataAndTemplate: function(data, htmltemplate) {
-		var template = Hogan.compile(htmltemplate);
+	renderHtmlWithDataAndTemplate: function(data,template) {
+		var template = Hogan.compile(template);
 		var res = template.render(data);
 		return res;
 	},

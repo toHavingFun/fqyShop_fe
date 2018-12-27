@@ -1,7 +1,7 @@
-require('./index.css');
+require('../common/nav/index.js');
+require('../common/header/index.js');
+var navSide = require('../common/nav-side/index.js');
+navSide.init({
+	name : 'about'
+});
 var _fqy = require('util/fqy.js');
-var html = '<h1>{{data}}</h1>';
-var data = {
-	data :'HelloWorld'
-};
-console.log(_fqy.renderHtmlWithDataAndTemplate(data,html));

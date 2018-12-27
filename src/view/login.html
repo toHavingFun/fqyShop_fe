@@ -1,7 +1,21 @@
 <!DOCTYPE html>
 <html>
-<%=require('html-loader!./layout/html-head.html')%>
+
+	<head>
+		<%=require('html-loader!./layout/head-content.html')%>
+		<title><%=htmlWebpackPlugin.options.title%> - 风清扬电商网站</title>
+	</head>
+
 	<body>
-		<h1>Hello,world</h1>
+		<%=require('html-loader!./layout/nav.html')%>
+		<%=require('html-loader!./layout/header.html')%>
+		<div class="page-wrap w" >
+			<%=require('html-loader!./layout/nav-side.html')%>
+			<div class="content with-nav ">
+				内容区			
+			</div>
+		</div>
+		<%=require('html-loader!./layout/footer.html')%>
 	</body>
+
 </html>
