@@ -19,7 +19,7 @@ var config = {
 	entry: {
 		'common': ['./src/page/common/index.js'],
 		'index': ['./src/page/index/index.js'],
-		'login': ['./src/page/login/index.js'],
+		'user-login': ['./src/page/user-login/index.js'],
 		'result': ['./src/page/result/index.js']
 		
 	},
@@ -42,7 +42,7 @@ var config = {
 		new ExtractTextPlugin('css/[name].css'),
 		//html 模板文件
 		new htmlWebpackPlugin(getHtmlConfig('index','首页')),
-		new htmlWebpackPlugin(getHtmlConfig('login','用户登录')),
+		new htmlWebpackPlugin(getHtmlConfig('user-login','用户登录')),
 		new htmlWebpackPlugin(getHtmlConfig('result','结果页'))
 	],
 	module: {
